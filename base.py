@@ -10,7 +10,6 @@ class MyTestCase(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.get('https://www.google.pl')
-        return self.driver
 
     def test1(self):
         self.driver.find_element_by_xpath('//*[@id="lst-ib"]').send_keys('siała baba mak' + Keys.ENTER)
